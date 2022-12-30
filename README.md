@@ -1,2 +1,2 @@
 # mini-project
-<p>github.io 로 배포해보기</p>
+<p>순차적으로 진행되는 todolist</p>
