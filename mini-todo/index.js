@@ -11,7 +11,7 @@ const ul = document.querySelector('ul');
 
 form.addEventListener('submit', (event)=>{
   event.preventDefault();
-  if(input.value != ''){
+  if(input.value > input.value.valueOf){
 
     const li = document.createElement('li');
     
