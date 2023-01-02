@@ -8,15 +8,26 @@ const ul = document.querySelector('ul');
 // 2- 1 버튼을 추가하기 
 // 3 삭제가 되게 만들기
 
+const del = () => {
+  const target = event.target.parentElement;
+  target.remove();
+}
 
 form.addEventListener('submit', (event)=>{
   event.preventDefault();
-  if(input.value > input.value.valueOf){
+  if(input.value > input.value.valueOf){ //공백으로 시작하면 안됨 -> 공백이여도 글자가 있으면 출력되게
 
     const li = document.createElement('li');
+    const span = document.createElement('span');
+    const button = document.createElement('button');
     
     li.innerText = input.value;
+    button.innerText = '삭제';
+    button.addEventListener('click', del)
+
     ul.appendChild(li);
+    li.appendChild(span);
+    li.appendChild(button);
     
     input.value = '';
   }
