@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Montserrat:wght@300;700&family=Nanum+Myeongjo&family=Roboto&family=Secular+One&family=Sevillana&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -6,7 +7,6 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   max-width: 920px;
   margin: 0 auto;
-
 }
 .wrap{
     background-color: #d1d1d1;
@@ -23,6 +23,32 @@ em:nth-child(2){
   color: goldenrod;
 }
 
+.clock{
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  letter-spacing: 20px;
+}
+.calendar{
+  display: flex;
+  color: #222;
+  letter-spacing: 20px;
+  float: right;
+}
+.divider{
+  color: #222;
+}
+.day{
+  color: #838282;
+  letter-spacing: 10px;
+}
+.This{
+  font-weight: bold;
+  cursor: pointer;
+}
+.ThisWeek{
+  color: goldenrod;
+}
 form {
   margin: 0 auto;
   width: 70%;
@@ -73,4 +99,5 @@ li {
   margin-bottom: 7px;
   margin-left: 100px;
   width: 74%;
+  font-family: 'Secular One', sans-serif;
 }

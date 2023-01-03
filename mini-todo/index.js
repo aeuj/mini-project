@@ -1,4 +1,44 @@
+// 디지털 시계
+const hour = document.querySelector('.hour');
+const min = document.querySelector('.min');
+const sec = document.querySelector('.sec');
 
+function clockBox(){
+
+  const clock = new Date();
+
+  hour.innerText = clock.getHours();
+  min.innerText = clock.getMinutes();
+  sec.innerText = clock.getSeconds();
+}
+
+setInterval(clockBox, 1000);
+
+// 디지털 달력
+let Thisyear = document.querySelector('.Thisyear');
+let Thismonth = document.querySelector('.Thismonth');
+let Thisday = document.querySelector('.Thisday');
+let ThisWeek = document.querySelector('.ThisWeek');
+
+function calendar() {
+  var myDay = new Date();
+
+  var year = myDay.getFullYear();
+  var month = myDay.getMonth();
+  var date = myDay.getDate();
+  var day = myDay.getDay();
+  var week = ['일', '월', '화', '수', '목', '금', '토'];
+
+  Thisyear.innerText = myDay.getFullYear();
+  Thismonth.innerText = (myDay.getMonth()+1); // 반환값이 0~11이기 때문에
+  Thisday.innerText = myDay.getDate();
+  ThisWeek.innerText = week[day];
+
+}
+
+calendar();
+
+// todolist
 const form = document.querySelector('form');
 const input = document.querySelector('input');
 const ul = document.querySelector('ul');
@@ -34,3 +74,5 @@ form.addEventListener('submit', (event)=>{
     input.value ='';
   }
 });
+
+
