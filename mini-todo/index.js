@@ -23,12 +23,14 @@ form.addEventListener('submit', (event)=>{
     const span = document.createElement('span')
 
     // li.innerText = input.value;
-    span.innerText = input.value;
+    li.innerText = input.value;
     button.innerText = '삭제';
     button.addEventListener('click', delItem)
 
     ul.appendChild(li);
-    li.append(span);
+    li.appendChild(span);
     li.appendChild(button);
+
+    input.value ='';
   }
 });
