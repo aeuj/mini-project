@@ -64,7 +64,7 @@ form.addEventListener('submit', (event)=>{
 
     // li.innerText = input.value;
     li.innerText = input.value;
-    button.innerText = '삭제';
+    button.innerText = 'Delete';
     button.addEventListener('click', delItem)
 
     ul.appendChild(li);
