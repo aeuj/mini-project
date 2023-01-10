@@ -4,23 +4,29 @@ const min = document.querySelector('.min');
 const sec = document.querySelector('.sec');
 
 function clockBox(){
-
+  
   const clock = new Date();
 
   hour.innerText = clock.getHours();
   min.innerText = clock.getMinutes();
   sec.innerText = clock.getSeconds();
-}
 
+  // 삼항연산자로 한자리 수 일때 앞에 0 추가하려고 했는데 아직 잘 안됨
+  // sec = sec < 10 ? `0${sec}` : sec
+
+}
+// 새로고침을 해도 바로 불러오게 (setInterval이 1초라서 1초가 없어지는 그 순간이 없게 만들어줌) 
+clockBox(); 
 setInterval(clockBox, 1000);
 
 // 디지털 달력
-let Thisyear = document.querySelector('.Thisyear');
-let Thismonth = document.querySelector('.Thismonth');
-let Thisday = document.querySelector('.Thisday');
-let ThisWeek = document.querySelector('.ThisWeek');
 
 function calendar() {
+  let Thisyear = document.querySelector('.Thisyear');
+  let Thismonth = document.querySelector('.Thismonth');
+  let Thisday = document.querySelector('.Thisday');
+  let ThisWeek = document.querySelector('.ThisWeek');
+
   var myDay = new Date();
 
   var year = myDay.getFullYear();
@@ -29,6 +35,7 @@ function calendar() {
   var day = myDay.getDay();
   var week = ['일', '월', '화', '수', '목', '금', '토'];
 
+  
   Thisyear.innerText = myDay.getFullYear();
   Thismonth.innerText = (myDay.getMonth()+1); // 반환값이 0~11이기 때문에
   Thisday.innerText = myDay.getDate();
