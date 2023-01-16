@@ -67,7 +67,7 @@ form.addEventListener('submit', (event)=>{
   if(input.value != ''){
     const li = document.createElement('li');
     const button = document.createElement('button');
-    const span = document.createElement('span')
+    const span = document.createElement('span');
 
     // li.innerText = input.value;
     li.innerText = input.value;
