@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <!-- axios cdn -->
+</head>
+<body>
+  <div class="header">
+    <h1>English typing practice</h1>
+  </div>
+  <div class="word-display">
+    START
+  </div>
+  <div class="word-input-box">
+    <input type="text" class="word-input"/>
+  </div>
+  <div class="game-info">
+    <div>
+      TIME: <span class="time">0</span>s
+    </div>
+    <div>
+      SCORE: <span class="score">0</span>points
+    </div>
+  </div>
+  <button class="button loading" onclick="run()">게임을 불러오는 중..</button>
+
+  <div class="game-wrap">
+    <div class="gameOver">Game over😢
+      <!-- <p> 점수 :  </p> -->
+      <button class="gameOverBtn">창닫기</button>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
