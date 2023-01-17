@@ -1,5 +1,5 @@
 // 사용변수 나열
-const GAME_TIME = 5;
+const GAME_TIME = 4;
 // 점수 생성
 let score = 0;
 // 시간 생성
@@ -13,6 +13,7 @@ const wordDisplay = document.querySelector('.word-display');
 const scoreDisplay = document.querySelector('.score');
 const timeDisplay = document.querySelector('.time');
 const button = document.querySelector('.button');
+const myPoint = document.querySelector('.mypoint');
 
 
 init();
@@ -37,11 +38,13 @@ function run(){
    // 게임버튼 클릭시 커서가 input창에 가게 하기
   wordInput.focus();
   scoreDisplay.innerText = 0;
+  scoreDisplay.style.color = 'blue';
   timeInterval = setInterval(countDown, 1000);
   // 상태 체크
   checkInterval = setInterval(checkStatus, 50);
   buttonChange('게임 중..');
 }
+
 
 // 0초이면서 게임이 종료면 버튼이 게임시작으로 바뀜
 function checkStatus(){
@@ -49,7 +52,6 @@ function checkStatus(){
     buttonChange("게임시작");
     clearInterval(checkInterval);
 
-    // 내가 추가함
     document.querySelector('.game-wrap').style.display = 'block';
     // 시간이 끝나면 게임종료 창에 점수가 나오게 한다
     // 창을 종료하면 score에 point가 리셋된다
@@ -57,9 +59,7 @@ function checkStatus(){
   }
 }
 
-
 // 단어 불러오기
-// 지금은 배열에 선언하지만 나중에는 단어api를 통해서 랜덤한 단어를 사이트에서 받아옴
 function getWords(){
   // axios api
   axios.get('https://random-word-api.herokuapp.com/word?number=100')
@@ -111,6 +111,7 @@ function countDown(){
   }
    // 시간 보이게 하기
   timeDisplay.innerText = time;
+  timeDisplay.style.color = 'red';
 }
 // 게임 버튼 텍스트
 function buttonChange(text){

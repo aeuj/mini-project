@@ -51,7 +51,7 @@ body{
   cursor: not-allowed;
 }
 .game-wrap{
-  display: none;
+  /* display: none; */
   margin-top: -13rem;
 }
 .gameOver{
@@ -83,4 +83,8 @@ body{
 }
 .gameOverBtn:hover::after{
   content: '❎';
+}
+.gamePoint{
+  font-size: 2rem;
+  color: gold;
 }
