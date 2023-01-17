@@ -13,7 +13,8 @@ const wordDisplay = document.querySelector('.word-display');
 const scoreDisplay = document.querySelector('.score');
 const timeDisplay = document.querySelector('.time');
 const button = document.querySelector('.button');
-const myPoint = document.querySelector('.mypoint');
+const gamePoint =  document.querySelector('.gamePoint');
+const myPoint = document.querySelector('.myPoint');
 
 
 init();
@@ -53,9 +54,7 @@ function checkStatus(){
     clearInterval(checkInterval);
 
     document.querySelector('.game-wrap').style.display = 'block';
-    // 시간이 끝나면 게임종료 창에 점수가 나오게 한다
-    // 창을 종료하면 score에 point가 리셋된다
-    // 로컬스토리지를 이용해서(등등) 최고 점수 기록이 되게 한다.
+    myPoint.innerHTML = score;
   }
 }
 
@@ -126,4 +125,5 @@ const gameOverBtn = document.querySelector('.gameOverBtn');
 
 gameOverBtn.addEventListener('click', function(){
   gameWrap.style.display = 'none';
+  scoreDisplay.innerHTML = '0';
 })

@@ -51,7 +51,7 @@ body{
   cursor: not-allowed;
 }
 .game-wrap{
-  /* display: none; */
+  display: none;
   margin-top: -13rem;
 }
 .gameOver{
