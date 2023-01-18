@@ -13,7 +13,7 @@ const show = (user, computer, result) =>{
   computerChoice.innerText = computer;
   userChoice.innerText = user;
   winner.innerText = result;
-}
+} 
 
 const game = (user, computer) =>{
 
