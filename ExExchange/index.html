@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+  <div class="wrap">
+    <div class="exchange-box">
+      <div class="dropdown">
+        <button class="dropbtn" id="from-button">USD</button>
+        <div class="dropdown-content" id="from-currency-list">
+          <a href="#">USD</a>
+          <a href="#">KRW</a>
+          <a href="#">VND</a>
+        </div>
+      </div>
+
+      <div class="imgbox"><img src="./images/coin.png" alt=""> </div>
+
+      <div class="input-area">
+        <!-- onkeyup 키보드 누를때마다 -->
+        <input type="number" id="from-input" onkeyup="convert()" placeholder="입력해주세요"/>
+        <div>달러</div>
+      </div>
+    </div>
+
+    <h1 style="padding: 30px ;margin-top: 610px;" >=</h1>
+
+    <div class="exchange-box">
+      <div class="dropdown">
+        <button class="dropbtn" id="to-button">USD</button>
+        <div class="dropdown-content" id="to-currency-list">
+          <a href="#">USD</a>
+          <a href="#">KRW</a>
+          <a href="#">VND</a>
+        </div>
+      </div>
+      
+      <div class="imgbox"><img src="./images/coin.png" alt=""> </div>
+      
+      <div class="input-area">
+        <input type="number" id="to-input" placeholder="입력해주세요"/>
+        <div>달러</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
