@@ -1,3 +1,6 @@
+window.onload = ()=>{
+
+
 // 디지털 시계
 const hour = document.querySelector('.hour');
 const min = document.querySelector('.min');
@@ -82,4 +85,6 @@ form.addEventListener('submit', (event)=>{
   }
 });
 
+
+}
 
