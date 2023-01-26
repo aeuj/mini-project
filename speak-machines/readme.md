@@ -8,5 +8,5 @@
   <li>css 추가</li>
   <li>언어 추가</li>
 </ol>
-📌[참고영상](https://www.youtube.com/watch?v=PcS8OElvNxU&list=PLpJDjPqxGWGrSGPUBqWlsJlcLF_grNClK&index=12)
+📌[참고영상](https://www.youtube.com/watch?v=PcS8OElvNxU&list=PLpJDjPqxGWGrSGPUBqWlsJlcLF_grNClK&index=12)<br/>
 📌[결과물링크](https://speak-machines.aeuj.repl.co)
