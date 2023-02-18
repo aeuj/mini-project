@@ -10,15 +10,48 @@ h1{
 h1, h5{
   text-align: center;
 }
+.world{
+  color: #eee;
+}
 button{
   padding: 10px 20px;
   border: none;
   background-color: dodgerblue;
+  border: 1px solid skyblue;
   color: white;
   border-radius: 3px;
+}
+button:hover{
+  background-color: goldenrod;
+  transition: .2s;
+  border: 1px solid yellow;
 }
 input{
   padding: 10px 20px;
   border: 1px solid dodgerblue;
-   border-radius: 3px;
+  border-radius: 3px;
+}
+input:focus { outline: none; border-color: goldenrod; box-shadow: 0 0 10px yellow; }
+input::placeholder {
+  font-size: 1.5em;
+  text-align: center;
+}
+header{
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+}
+header span{
+  margin: 30px;
+  font-size: 2em;
+}
+header span:nth-child(5), header span:nth-child(6), header span:nth-child(7),
+header span:nth-child(8), header span:nth-child(9){
+  color: dodgerblue;
+}
+.sub-content{
+  display: block;
+  font-size: 0.8em;
+  text-align: center;
+  margin-bottom: 10px;
 }

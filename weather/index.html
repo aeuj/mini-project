@@ -8,10 +8,27 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <header>
+    <span>🌞</span>
+    <span>☁️</span>
+    <span>⛅</span>
+    <span>⛈</span>
+    <span>🌤</span>
+    <span>🌥</span>
+    <span>🌦</span>
+    <span>🌧</span>
+    <span>🌨</span>
+    <span>🌩</span>
+    <span>🌂</span>
+    <span>☂️</span>
+    <span>☔️</span>
+
+  </header>
   <div class="container">
-    <h1>오늘의 날씨</h1>
-    <h5>첫글자는 대문자로 작성. 도시이름은 영어로</h5>
-    <input id="city" type="text">
+    <h1>세계의 날씨🌏</h1>
+    <h1 class="world">The world's weather🌏</h1>
+    <em class="sub-content">첫글자는 대문자로 작성. 도시이름은 영어로 ex) Busan</em>
+    <input id="city" type="text" placeholder="🌡"/>
     <button onclick="getWeather()">날씨 가져오기</button>
     <p id="temperature"></p>
   </div>
@@ -28,5 +45,7 @@
       });
     }
   </script>
+  
+  <script src="./script.js"></script>
 </body>
 </html>
