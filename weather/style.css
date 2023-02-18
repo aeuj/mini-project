@@ -1,0 +1,24 @@
+.container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+h1{
+  color: dodgerblue;
+}
+h1, h5{
+  text-align: center;
+}
+button{
+  padding: 10px 20px;
+  border: none;
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 3px;
+}
+input{
+  padding: 10px 20px;
+  border: 1px solid dodgerblue;
+   border-radius: 3px;
+}

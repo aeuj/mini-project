@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wether</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>오늘의 날씨</h1>
+    <h5>첫글자는 대문자로 작성. 도시이름은 영어로</h5>
+    <input id="city" type="text">
+    <button onclick="getWeather()">날씨 가져오기</button>
+    <p id="temperature"></p>
+  </div>
+
+
+  <script>
+
+    function getWeather(){
+      let city = document.getElementById('city').value;
+      fetch('https://goweather.herokuapp.com/weather/' + city)
+      .then((response) => response.json())
+      .then((data) => {
+        document.getElementById('temperature').innerHTML = data['temperature']
+      });
+    }
+  </script>
+</body>
+</html>
