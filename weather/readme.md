@@ -13,3 +13,4 @@
 
     js파일과 나눠야 되는데 왜 지금 자꾸 렉이 걸리는지!(아님 내가 뭘 잘못하나..ㅎ)😓
 📌[참고api](https://github.com/robertoduessmann/weather-api)
+ ➤[결과물링크](https://CluelessWobblyDatalog.aeuj.repl.co)
